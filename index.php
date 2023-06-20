@@ -36,19 +36,19 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container-fluid bg-danger py-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 text-center">
-					<?php 
-						echo "<h1>Titolo: " . $myMovie->title . "</h1>" 
-						. "<p>". $myMovie->description . "</p>"
-						. "<p>". $myMovie->DoP() . "</p>";
-
-						echo "<h1>Titolo: " . $io->title . "</h1>" 
-						. "<p>Descrizione: ". $io->description . "</p>"
-						. "<p>Data di produzione: ". $io->DoP() . "</p>";
-					?>
+				<div class="col-12 text-center bg-success rounded">
+						<?php 
+						echo "<h1 class='text-warning'>" . $myMovie->title . "</h1>" 
+						. "<p class='text-white'>". $myMovie->description . "</p>"
+						. "<p class='text-primary'>". $myMovie->DoP() . "</p>";
+						
+						echo "<h1 class='text-warning'>" . $io->title . "</h1>" 
+						. "<p class='text-white'>". $io->description . "</p>"
+						. "<p class='text-primary'>". $io->DoP() . "</p>";
+						?>
 				</div>
 			</div>
 		</div>
